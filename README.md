@@ -7,8 +7,6 @@ SecureBank-SaaS enables users to manage transactions, credit cards, and account 
 
 
 
----
-
 ## 📌 Overview
 
 SecureBank-SaaS is designed to replicate the core features of a digital banking platform.  
