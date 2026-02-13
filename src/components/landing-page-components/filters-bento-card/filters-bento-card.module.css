@@ -1,0 +1,24 @@
+.filters {
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--section-outline);
+}
+
+.filtersGroup {
+  margin-bottom: calc(var(--space-lg) * 2);
+}
+
+.heading {
+  margin-bottom: var(--space-lg);
+}
+
+.list {
+  display: flex;
+  gap: var(--space-md);
+  width: 0;
+}
+
+.item {
+  width: max-content;
+  flex-shrink: 0;
+}

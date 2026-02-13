@@ -1,0 +1,10 @@
+.cell {
+  font-size: var(--paragraph-sm);
+  color: var(--neutral-400);
+  text-align: left;
+  padding-inline: var(--space-lg);
+}
+
+.cell:last-child {
+  text-align: right;
+}

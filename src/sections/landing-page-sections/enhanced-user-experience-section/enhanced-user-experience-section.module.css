@@ -1,0 +1,25 @@
+.bento {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xlg);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xlg);
+}
+
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .wide {
+    flex: 6;
+  }
+
+  .narrow {
+    flex: 4;
+  }
+}

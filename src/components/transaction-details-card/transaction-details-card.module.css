@@ -1,0 +1,49 @@
+.card {
+  --border-radius: var(--border-radius-md);
+  --border-size: 1px;
+  width: 100%;
+  max-width: var(--transaction-details-width);
+  background-image: var(--section-background);
+  border: var(--border-size) solid var(--section-outline);
+  border-radius: var(--border-radius);
+  height: max-content;
+}
+
+.head {
+  position: relative;
+  background-color: var(--brand-500);
+  background-image: linear-gradient(
+    transparent,
+    hsl(from var(--black) h s l / 5%)
+  );
+  border-top-left-radius: calc(var(--border-radius) - var(--border-size));
+  border-top-right-radius: calc(var(--border-radius) - var(--border-size));
+}
+
+.amount {
+  color: var(--white);
+  margin-bottom: var(--space-md);
+}
+
+.id {
+  color: var(--white);
+  font-size: var(--paragraph-sm);
+}
+
+.close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+}
+
+.head,
+.body {
+  padding: var(--space-md);
+}
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-xlg) * 2);
+  margin-bottom: calc(var(--space-md) * 2);
+}

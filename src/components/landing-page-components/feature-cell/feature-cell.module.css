@@ -1,0 +1,34 @@
+.iconWrapper {
+  background-color: red;
+  max-width: max-content;
+  padding: var(--space-xsm);
+  border-radius: var(--border-radius-sm);
+  box-shadow: inset 0 0 0 1px var(--neutral-700);
+  background-image: linear-gradient(
+      hsl(from var(--black) h s l / 5%),
+      hsl(from var(--black) h s l / 5%)
+    ),
+    linear-gradient(transparent, hsl(from var(--white) h s l / 10%));
+  background-color: var(--neutral-700);
+}
+
+.iconWrapper svg {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.heading {
+  font-size: var(--heading4-landing-page);
+  color: var(--neutral-100);
+}
+
+.paragraph {
+  max-width: 18.75rem;
+}

@@ -1,0 +1,28 @@
+.card {
+  background-color: var(--neutral-800);
+  border: 1px solid var(--neutral-300);
+  max-width: var(--guide-card-width);
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+}
+
+.imageWrapper,
+.image {
+  border-top-left-radius: calc(var(--border-radius-sm) - 1px);
+  border-top-right-radius: calc(var(--border-radius-sm) - 1px);
+}
+
+.imageWrapper {
+  background-color: var(--neutral-700);
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.textGroup {
+  padding: var(--space-lg);
+}
+
+.heading {
+  max-width: 24ch;
+  margin-bottom: unset;
+}

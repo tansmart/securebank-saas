@@ -1,0 +1,11 @@
+.content {
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--section-outline);
+}
+
+.header {
+  margin-bottom: calc(var(--space-lg) * 2);
+  display: flex;
+  justify-content: flex-end;
+}

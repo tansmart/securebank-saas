@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.creditCard {
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--space-xlg) * 2) var(--space-lg);
+}
+
+@media (max-width: 400px) {
+  .header {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,11 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    gap: calc(var(--space-lg) * 2);
+  }
+}

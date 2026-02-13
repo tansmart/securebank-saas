@@ -1,0 +1,39 @@
+.section {
+  padding-block: calc(
+      var(--header-height) + var(--section-padding-landing-page)
+    )
+    var(--section-padding-landing-page);
+  position: relative;
+  isolation: isolate;
+}
+
+.bento {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xlg);
+  padding-top: calc(var(--space-xlg) * 4);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xlg);
+}
+
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+
+  .wide {
+    flex: 6;
+  }
+
+  .narrow {
+    flex: 4;
+  }
+
+  .half {
+    flex: 5;
+  }
+}

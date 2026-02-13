@@ -1,0 +1,15 @@
+.appliedFilters {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.removeFilter:hover {
+  outline: 1px solid var(--section-outline);
+  border-radius: var(--border-radius-xsm);
+}
+
+.removeFilter svg {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+}

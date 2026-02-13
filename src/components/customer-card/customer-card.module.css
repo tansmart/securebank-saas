@@ -1,0 +1,28 @@
+.card {
+  background-image: var(--bento-card-background);
+  border-radius: var(--border-radius-xlg);
+  border: 1px solid var(--section-outline);
+  padding: calc(var(--space-xlg) * 2);
+  width: 100%;
+  max-width: var(--customer-card-width);
+}
+
+.logoWrapper {
+  background-color: var(--neutral-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--space-xlg) * 3);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--space-xlg);
+}
+
+.name {
+  text-align: center;
+  font-size: var(--heading3-landing-page);
+  margin-bottom: var(--space-md);
+}
+
+.description {
+  text-align: center;
+}

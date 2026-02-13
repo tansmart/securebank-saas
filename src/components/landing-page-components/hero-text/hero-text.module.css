@@ -1,0 +1,18 @@
+.text {
+  text-align: center;
+  max-width: 56rem;
+  margin-inline: auto;
+}
+
+.heading {
+  font-size: var(--heading1-landing-page);
+  font-weight: 400;
+  line-height: var(--line-height-heading1-landing-page);
+  margin-bottom: var(--space-xlg);
+}
+
+.paragraph {
+  max-width: 26rem;
+  margin-inline: auto;
+  margin-bottom: calc(var(--space-xlg) * 2);
+}

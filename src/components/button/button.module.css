@@ -1,0 +1,110 @@
+.base {
+  --background: linear-gradient(
+    transparent,
+    hsl(from var(--white) h s l / 20%)
+  );
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-size: var(--paragraph);
+  color: var(--clickable);
+  border-radius: var(--border-radius-sm);
+  background-image: var(--background);
+  box-shadow: inset 0 0 0 1px var(--outline-color);
+  line-height: 1;
+}
+
+.base:hover {
+  --background-color: hsl(from var(--black) h s l / 5%);
+  background-image: linear-gradient(
+      var(--background-color),
+      var(--background-color)
+    ),
+    var(--background);
+}
+
+.base:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
+.primary {
+  --outline-color: var(--brand-500);
+  background-color: var(--brand-500);
+  color: var(--black);
+}
+
+.secondary {
+  --outline-color: var(--neutral-800);
+  background-color: var(--neutral-800);
+}
+
+.tertiary {
+  --outline-color: var(--section-outline);
+}
+
+.ghost {
+  background: unset;
+  --outline-color: unset;
+}
+
+.ghost:hover {
+  background: unset;
+  --outline-color: unset;
+}
+
+.danger {
+  --outline-color: var(--danger-500);
+  background-color: var(--danger-500);
+}
+
+.link {
+  color: var(--brand-500);
+  background: unset;
+}
+
+.link:hover {
+  background: unset;
+  color: var(--brand-600);
+}
+
+.rainbow {
+  background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  ) !important;
+  color: transparent;
+}
+
+.large {
+  padding: var(--space-md) var(--space-xlg);
+  height: var(--button-height-lg);
+}
+
+.medium {
+  padding: var(--space-xsm) var(--space-md);
+  height: var(--button-height-md);
+}
+
+.small {
+  padding: var(--space-xsm);
+  height: var(--button-height-sm);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}

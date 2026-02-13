@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.amount {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: unset;
+  font-size: var(--heading1);
+  color: var(--neutral-100);
+}

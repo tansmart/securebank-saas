@@ -1,0 +1,12 @@
+.section {
+  padding-block: calc(
+      var(--header-height) + var(--section-padding-landing-page)
+    )
+    var(--section-padding-landing-page);
+  position: relative;
+  isolation: isolate;
+}
+
+.customersListWrapper {
+  padding-top: calc(var(--space-xlg) * 4);
+}

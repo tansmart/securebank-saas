@@ -1,0 +1,20 @@
+.section {
+  background-image: var(--landing-page-section-background);
+  padding-block: var(--section-padding-landing-page);
+}
+
+.heading {
+  font-size: var(--heading2-landing-page);
+  line-height: var(--line-height-heading2-landing-page);
+  margin-bottom: var(--space-xlg);
+  text-align: center;
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.paragraph {
+  margin-bottom: calc(var(--space-xlg) * 2);
+  text-align: center;
+  max-width: 31rem;
+  margin-inline: auto;
+}

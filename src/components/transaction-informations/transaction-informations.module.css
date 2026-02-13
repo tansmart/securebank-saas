@@ -1,0 +1,21 @@
+.informations {
+  display: flex;
+  gap: var(--space-xsm);
+}
+
+.image {
+  --width: 4rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 100%;
+  max-width: var(--width);
+}
+
+.name {
+  margin-bottom: var(--space-md);
+  color: var(--neutral-100);
+}
+
+.item:not(:last-child) {
+  margin-bottom: var(--space-sm);
+}

@@ -1,0 +1,20 @@
+.imageWrapper {
+  --height: 6.875rem;
+  height: var(--height);
+  aspect-ratio: 16 / 11;
+  background-color: var(--neutral-800);
+  outline: 1px solid var(--neutral-300);
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: var(--space-sm);
+}
+
+.imageWrapper.active {
+  outline: 1px solid var(--brand-500);
+}
+
+.label {
+  color: var(--neutral-100);
+}

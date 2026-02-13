@@ -1,0 +1,20 @@
+.wrapper {
+  --width: 3rem;
+  width: var(--width);
+  aspect-ratio: 2 / 1;
+  border-radius: var(--border-radius-xsm);
+  background-image: linear-gradient(
+    to top,
+    hsl(from var(--black) h s l / 50%),
+    transparent
+  );
+  box-shadow: 0 0 0 1px var(--section-outline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: max-content !important;
+  aspect-ratio: unset !important;
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image,
+.paragraph {
+  margin-bottom: var(--space-lg);
+}
+
+.heading {
+  margin-bottom: var(--space-md);
+}

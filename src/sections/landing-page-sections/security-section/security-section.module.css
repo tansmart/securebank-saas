@@ -1,0 +1,10 @@
+.section {
+  padding-block: calc(
+      var(--header-height) + var(--section-padding-landing-page)
+    )
+    var(--section-padding-landing-page);
+}
+
+.featureListWrapper {
+  padding-top: calc(var(--space-xlg) * 4);
+}

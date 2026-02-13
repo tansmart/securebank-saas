@@ -1,0 +1,23 @@
+.section {
+  padding-block: calc(
+      var(--header-height) + var(--section-padding-landing-page)
+    )
+    var(--section-padding-landing-page);
+  position: relative;
+  isolation: isolate;
+}
+
+.section::before {
+  content: '';
+  background-image: var(--hero-section-landing-page-background);
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.dashboardWrapper {
+  background-image: radial-gradient(#0f2238, transparent 50%);
+  padding-block: calc(var(--space-xlg) * 4);
+}

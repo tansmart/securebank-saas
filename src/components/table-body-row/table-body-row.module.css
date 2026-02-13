@@ -1,0 +1,12 @@
+.row {
+  height: var(--table-body-row-height);
+  cursor: pointer;
+}
+
+.row:hover {
+  background-color: var(--neutral-900);
+}
+
+.row.active {
+  background-color: var(--neutral-800);
+}

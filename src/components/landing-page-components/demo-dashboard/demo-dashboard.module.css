@@ -1,0 +1,45 @@
+.dashboard {
+  background-image: var(--background);
+  border: 1px solid var(--section-outline);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  height: 80vh;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.pageWrapper {
+  width: 100%;
+  padding-block: var(--space-lg);
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  width: calc(100% - 2rem);
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .dashboard {
+    height: 60rem;
+  }
+
+  .wrapper {
+    padding-block: calc(var(--space-lg) * 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    gap: calc(var(--space-lg) * 2);
+  }
+}

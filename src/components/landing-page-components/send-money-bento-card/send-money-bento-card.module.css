@@ -1,0 +1,17 @@
+.form {
+  padding: var(--space-lg);
+  max-width: var(--add-new-credit-card-modal-width);
+  margin-inline: auto;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--section-outline);
+}
+
+.header {
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--section-outline);
+  margin-bottom: var(--space-lg);
+}
+
+.inputWrapper:not(:last-child) {
+  margin-bottom: var(--space-lg);
+}

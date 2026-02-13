@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xlg);
+}
+
+.balanceWrapper {
+  width: 100%;
+}
+
+.balance {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap-reverse;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .balanceWrapper {
+    width: unset;
+  }
+}

@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xsm);
+}
+
+.circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 100vmax;
+  background-color: var(--success-500);
+  border: 3px solid var(--white);
+}
+
+.active {
+  background-color: var(--success-500);
+}
+
+.inactive {
+  background-color: var(--danger-500);
+}
+
+.label {
+  color: var(--neutral-100);
+  font-size: var(--paragraph-sm);
+}

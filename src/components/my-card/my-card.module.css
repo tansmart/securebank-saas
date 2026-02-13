@@ -1,0 +1,57 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cardInformations {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.logoWrapper {
+  --height: 5rem;
+  background-color: var(--neutral-800);
+  height: var(--height);
+  aspect-ratio: 2 / 1;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.numbers {
+  color: var(--neutral-100);
+}
+
+.expirationDate {
+  color: var(--neutral-400);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .cardInformations,
+  .buttons {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex-direction: row;
+  }
+}

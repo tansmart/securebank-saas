@@ -1,0 +1,28 @@
+.headingTwo,
+.headingThree,
+.headingFour {
+  margin-bottom: var(--space-sm);
+  color: var(--neutral-100);
+}
+
+.paragraph:not(:last-child),
+.list:not(:last-child) {
+  margin-bottom: var(--space-md);
+}
+
+.paragraph > strong,
+.item > strong {
+  color: var(--neutral-100);
+}
+
+.item {
+  color: var(--neutral-400);
+  list-style: unset;
+  margin-left: calc(var(--space-xlg) * 2);
+  margin-bottom: var(--space-xsm);
+}
+
+.video {
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--space-sm);
+}

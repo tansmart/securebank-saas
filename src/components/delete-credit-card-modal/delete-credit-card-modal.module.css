@@ -1,0 +1,36 @@
+.modal {
+  background-image: var(--modal-background);
+  border: 1px solid var(--section-outline);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-md);
+  backdrop-filter: blur(var(--blur-sm));
+  width: var(--delete-credit-card-modal-width);
+  max-width: 100%;
+  text-align: center;
+}
+
+.image,
+.paragraph {
+  margin-bottom: var(--space-lg);
+}
+
+.image {
+  margin-inline: auto;
+}
+
+.heading {
+  margin-bottom: var(--space-md);
+}
+
+.paragraph {
+  font-size: var(--paragraph-sm);
+}
+
+.buttons {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.button {
+  width: 100%;
+}

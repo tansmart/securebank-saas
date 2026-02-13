@@ -1,0 +1,7 @@
+.section {
+  max-width: calc(
+    ((var(--guide-card-width) + 1px) * 2) + (var(--space-lg) * 2) +
+      var(--space-md)
+  );
+  margin-inline: auto;
+}

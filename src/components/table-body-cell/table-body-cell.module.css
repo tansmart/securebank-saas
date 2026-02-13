@@ -1,0 +1,14 @@
+.cell {
+  font-size: var(--paragraph-sm);
+  padding: var(--space-lg);
+  color: var(--clickable);
+}
+
+.cell img {
+  aspect-ratio: 1/1;
+  width: calc(var(--space-xlg) * 2);
+}
+
+.cell:last-child {
+  text-align: right;
+}

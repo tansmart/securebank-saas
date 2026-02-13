@@ -1,0 +1,51 @@
+.card {
+  --logo-wrapper-height: 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.logoWrapper {
+  background-color: var(--neutral-800);
+  height: var(--logo-wrapper-height);
+  aspect-ratio: 2 / 1;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: var(--neutral-100);
+}
+
+.description {
+  color: var(--neutral-400);
+  max-width: calc(var(--logo-wrapper-height) * 2);
+  display: inline-block;
+}
+
+/* @media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+} */
+
+@media (min-width: 1024px) {
+  .informations {
+    flex-direction: row;
+  }
+
+  .description {
+    max-width: calc(var(--logo-wrapper-height) * 3);
+  }
+}

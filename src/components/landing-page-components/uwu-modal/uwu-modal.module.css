@@ -1,0 +1,17 @@
+.modal {
+  background-image: var(--modal-background);
+  border: 1px solid var(--section-outline);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-md);
+  backdrop-filter: blur(var(--blur-sm));
+  width: var(--send-money-modal-width);
+  max-width: 100%;
+}
+
+.image {
+  margin-bottom: var(--space-xlg);
+}
+
+.heading {
+  text-align: center;
+}

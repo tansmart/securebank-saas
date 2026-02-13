@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  width: 100%;
+}
+
+.input {
+  position: relative;
+  padding-left: calc(var(--space-lg) + var(--space-sm) + var(--icon-size-sm));
+}
+
+.input:focus {
+  box-shadow: inset 0 0 0 1px var(--brand-500);
+}
+
+.optional {
+  font-size: var(--paragraph-sm);
+  margin-left: var(--space-xsm);
+  color: var(--neutral-400);
+}
+
+.iconWrapper {
+  position: relative;
+}
+
+.leftIcon svg,
+.rightIcon svg {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 1;
+}
+
+.leftIcon svg {
+  left: var(--space-lg);
+}
+
+.rightIcon svg {
+  right: var(--space-lg);
+}

@@ -1,0 +1,111 @@
+.sidebar {
+  --width: 14.375rem;
+  background-image: var(--section-background);
+  border-right: 1px solid var(--section-outline);
+  padding: var(--space-lg);
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  backdrop-filter: blur(var(--blur-xsm));
+}
+
+.sidebar.active {
+  min-width: var(--width);
+  width: 100%;
+  position: absolute;
+  border-right: unset;
+}
+
+@media (min-width: 728px) {
+  .sidebar.active {
+    position: sticky;
+    width: fit-content;
+    border-right: 1px solid var(--section-outline);
+  }
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  width: max-content;
+  flex-direction: column;
+}
+
+.sidebar.active .head {
+  width: 100%;
+  flex-direction: row;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  height: 100%;
+  justify-content: space-between;
+  overflow-y: auto;
+  width: max-content;
+}
+
+.sidebar.active .navigation {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.button {
+  width: 100%;
+  justify-content: unset !important;
+}
+
+.button span {
+  display: none;
+}
+
+.sidebar.active .button span {
+  display: inline;
+}
+
+.link span {
+  display: none;
+}
+
+.sidebar.active .link span {
+  display: inline;
+}
+
+.userInformations {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-xsm);
+}
+
+.userProfilePicture {
+  --width: 1.375rem;
+  width: var(--width);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.username {
+  display: none;
+}
+
+.sidebar.active .username {
+  display: block;
+}

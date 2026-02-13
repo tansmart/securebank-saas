@@ -1,0 +1,30 @@
+.modal {
+  background-image: var(--modal-background);
+  border: 1px solid var(--section-outline);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-md);
+  backdrop-filter: blur(var(--blur-sm));
+  width: var(--send-money-modal-width);
+  max-width: 100%;
+}
+
+.head {
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--section-outline);
+  margin-bottom: var(--space-lg);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.buttons {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.button {
+  width: 100%;
+}

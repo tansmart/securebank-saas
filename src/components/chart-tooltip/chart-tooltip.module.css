@@ -1,0 +1,15 @@
+.tooltip {
+  background-image: var(--modal-background);
+  padding: var(--space-md);
+  border: 1px solid var(--section-outline);
+  border-radius: var(--border-radius-sm);
+}
+
+.amount {
+  color: var(--neutral-100);
+}
+
+.time {
+  font-size: var(--paragraph-sm);
+  color: var(--neutral-400);
+}

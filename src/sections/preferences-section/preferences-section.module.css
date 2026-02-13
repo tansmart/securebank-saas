@@ -1,0 +1,4 @@
+.themeListWrapper,
+.chartListWrapper {
+  margin-bottom: calc(var(--space-lg) * 2);
+}

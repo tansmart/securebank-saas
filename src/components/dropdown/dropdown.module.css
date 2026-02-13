@@ -1,0 +1,7 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+  background-color: var(--neutral-800);
+  border-radius: var(--border-radius-sm);
+}

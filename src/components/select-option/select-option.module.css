@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.select,
+.iconWrapper,
+.option {
+  color: var(--clickable);
+}
+
+.iconWrapper {
+  position: relative;
+}
+
+.leftIcon svg,
+.rightIcon svg {
+  width: var(--icon-size-sm);
+}
+
+.leftIcon svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--space-lg);
+  z-index: 1;
+}
+
+.rightIcon svg {
+  position: absolute;
+  right: var(--space-lg);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.select {
+  text-indent: calc(var(--space-sm) + var(--icon-size-sm));
+  appearance: none;
+}
+
+@-moz-document url-prefix() {
+  .select {
+    --offset: 0.0625rem;
+    text-indent: calc(var(--space-lg) - var(--offset));
+  }
+}
+
+.select:focus {
+  box-shadow: inset 0 0 0 1px var(--brand-500);
+}
+
+.select:invalid {
+  color: var(--neutral-400);
+}
+
+.option[value=''][disabled] {
+  display: none;
+}
+
+.optional {
+  font-size: var(--paragraph-sm);
+  margin-left: var(--space-xsm);
+  color: var(--neutral-400);
+}

@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.myCardsListWrapper {
+  margin-bottom: calc(var(--space-lg) * 2);
+}

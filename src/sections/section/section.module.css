@@ -1,0 +1,7 @@
+.section {
+  padding: var(--space-lg);
+  border: 1px solid var(--section-outline);
+  border-radius: var(--border-radius-md);
+  background-image: var(--section-background);
+  width: 100%;
+}

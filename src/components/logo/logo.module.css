@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-md);
+  align-items: center;
+  padding: var(--space-sm);
+  margin: calc(var(--space-sm) * -1);
+}
+
+.text {
+  font-size: var(--logo);
+  font-weight: 500;
+  color: var(--clickable);
+}

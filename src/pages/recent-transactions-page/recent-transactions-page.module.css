@@ -1,0 +1,19 @@
+.layoutPrimary {
+  display: flex;
+  gap: calc(var(--space-lg) * 2);
+  flex-direction: column;
+}
+
+.layoutSecondary {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .layoutSecondary {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,41 @@
+.primaryLayout,
+.secondaryLayout,
+.tertiaryLayout {
+  display: flex;
+  gap: var(--space-lg);
+  width: 100%;
+}
+
+.primaryLayout,
+.tertiaryLayout {
+  flex-direction: column;
+}
+
+.secondaryLayout {
+  flex-direction: column-reverse;
+}
+
+.wideChild {
+  flex: 6;
+  width: 100%;
+}
+
+.narrowChild {
+  flex: 4;
+}
+
+.narrowChild section {
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .primaryLayout,
+  .secondaryLayout,
+  .tertiaryLayout {
+    gap: calc(var(--space-lg) * 2);
+  }
+
+  .secondaryLayout {
+    flex-direction: row;
+  }
+}
