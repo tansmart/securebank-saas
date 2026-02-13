@@ -67,10 +67,4 @@ It focuses on clean UI, reusable components, and structured data handling.
 
 ---
 
-## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/securebank-saas.git
-cd securebank-saas
